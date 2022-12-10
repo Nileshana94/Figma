@@ -21,9 +21,14 @@ public class RegisterFormController {
     public void signUpOnAction(ActionEvent actionEvent) {
         String realPwd=txtPassword.getText().trim();
         String matchPwd=txtReEnterPassword.getText().trim();
-
+        if(realPwd.isEmpty()&&matchPwd.isEmpty()){
+            new Alert(Alert.AlertType.WARNING,"Fill the empty password field!").show();
+            return;
+        }
         if(!realPwd.equals(matchPwd)){
             new Alert(Alert.AlertType.WARNING,"Each password are not matched!").show();
+            txtPassword.clear();
+            txtReEnterPassword.clear();
             return;
         }
 
