@@ -1,5 +1,7 @@
 package db;
 
+import com.sllinks.pos.model.User;
+
 import java.util.ArrayList;
 
 public class Database {
