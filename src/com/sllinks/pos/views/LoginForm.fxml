@@ -19,6 +19,9 @@
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
          </children>
       </AnchorPane>
@@ -48,8 +51,8 @@
       <Separator layoutX="70.0" layoutY="456.0" prefHeight="6.0" prefWidth="125.0" />
       <Separator layoutX="229.0" layoutY="456.0" prefHeight="6.0" prefWidth="133.0" />
       <Label layoutX="203.0" layoutY="451.0" text="OR" />
-      <TextField layoutX="80.0" layoutY="269.0" prefHeight="34.0" prefWidth="278.0" promptText="Name" />
-      <PasswordField layoutX="80.0" layoutY="340.0" prefHeight="34.0" prefWidth="278.0" promptText="Password " />
+      <TextField fx:id="txtUserName" layoutX="80.0" layoutY="269.0" prefHeight="34.0" prefWidth="278.0" promptText="Name" />
+      <PasswordField fx:id="txtPassword" layoutX="80.0" layoutY="340.0" prefHeight="34.0" prefWidth="278.0" promptText="Password " />
       <Label layoutX="77.0" layoutY="240.0" text="Name:" />
       <Label layoutX="77.0" layoutY="312.0" prefHeight="18.0" prefWidth="68.0" text="Password:" />
       <ImageView fitHeight="222.0" fitWidth="244.0" layoutX="89.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
@@ -57,7 +60,7 @@
             <Image url="@../asset/logo-img-removebg-preview.png" />
          </image>
       </ImageView>
-      <JFXButton buttonType="RAISED" layoutX="77.0" layoutY="394.0" prefHeight="34.0" prefWidth="278.0" style="-fx-background-color: #2980b9;" text="Login" textFill="WHITE">
+      <JFXButton buttonType="RAISED" layoutX="77.0" layoutY="394.0" onAction="#btnLoginOnAction" prefHeight="34.0" prefWidth="278.0" style="-fx-background-color: #2980b9;" text="Login" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

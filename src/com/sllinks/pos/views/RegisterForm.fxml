@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Separator?>
@@ -28,6 +29,9 @@
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <Separator layoutX="54.0" layoutY="505.0" prefHeight="6.0" prefWidth="118.0" />
             <Separator layoutX="205.0" layoutY="505.0" prefHeight="6.0" prefWidth="133.0" />
@@ -38,10 +42,13 @@
             <TextField fx:id="txtEmail" layoutX="56.0" layoutY="152.0" prefHeight="34.0" prefWidth="278.0" promptText="Email" />
             <Label layoutX="58.0" layoutY="134.0" prefHeight="18.0" prefWidth="68.0" text="Email" />
             <Separator layoutX="27.0" layoutY="29.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="0.0" />
-            <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="526.0" prefHeight="34.0" prefWidth="278.0" style="-fx-background-color: #34495e;" text="Already have an account" textFill="#fffbfb">
+            <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="526.0" onAction="#btnAlreadyHaveAnAccountOnAction" prefHeight="34.0" prefWidth="278.0" style="-fx-background-color: #34495e;" text="Already have an account" textFill="#fffbfb">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </JFXButton>
             <TextField fx:id="txtContact" layoutX="60.0" layoutY="413.0" prefHeight="34.0" prefWidth="278.0" promptText="Name" />
          </children>
