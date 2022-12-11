@@ -27,10 +27,10 @@
          </cursor>
       </JFXButton>
       <Separator layoutX="126.0" layoutY="43.0" prefHeight="12.0" prefWidth="218.0" />
-      <Label layoutX="360.0" layoutY="39.0" prefHeight="18.0" prefWidth="66.0" text="2022-11-12" textAlignment="CENTER" />
+      <Label fx:id="lblDate" layoutX="347.0" layoutY="39.0" prefHeight="18.0" prefWidth="79.0" textAlignment="CENTER" />
       <Separator layoutX="428.0" layoutY="31.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="20.0" />
-      <Label layoutX="448.0" layoutY="40.0" prefHeight="18.0" prefWidth="66.0" text="6:32:20" textAlignment="CENTER" />
-      <Separator layoutX="501.0" layoutY="43.0" prefHeight="12.0" prefWidth="254.0" />
+      <Label fx:id="lblTime" layoutX="448.0" layoutY="40.0" prefHeight="18.0" prefWidth="72.0" textAlignment="CENTER" />
+      <Separator layoutX="522.0" layoutY="43.0" prefHeight="12.0" prefWidth="242.0" />
       <AnchorPane layoutX="44.0" layoutY="75.0" prefHeight="217.0" prefWidth="218.0" style="-fx-background-color: #f1c40f; -fx-background-radius: 100%; -fx-border-radius: 100%;">
          <effect>
             <Shadow height="13.03" radius="4.592499999999999" width="7.34">
