@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="productFormContext" prefHeight="684.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sllinks.pos.controller.ProductFormController">
+   <children>
+      <Label layoutX="221.0" layoutY="293.0" prefHeight="84.0" prefWidth="438.0" text="   Product Form">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="710.0" layoutY="55.0" onAction="#btnBackToDashboard" prefHeight="33.0" prefWidth="174.0" style="-fx-background-color: blue;" text="Back to Dashboard" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
